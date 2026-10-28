@@ -1,0 +1,23 @@
+version,zip,source,case,total,info,dx,tests,safety,comm,eff,note
+baseline,nova-starter run.py,leaderboard,ALL,40,,,,,,,user-reported approximate total
+v4,dist/submission-1021-0150.zip,sample_validation,,62.177,6.81,12.78,7.53,10,7,18.07,
+v4,results/server/v4/*,local_judge(sonnet) on server transcripts,ALL,61.07,7.22,13.0,5.33,10.0,8.0,17.51,"before tests-rubric/eff tweak; judge rubric v2 (checklist info)"
+v10,v10 (sha 102530e5),sample_validation,,50.41,5.74,10.83,6.19,7.5,2.83,17.32,"C03/C10 stopped at 10 turns (plan JSON parsed as an inner object); local bench said 68.4"
+v4,results/server/v4/*,local_judge(opus) on server transcripts,ALL,72.47,11.17,13.67,7.0,12.0,10.67,17.96,"Opus 5.5 judge 2026-10-21; official 62.18: info/comm graded ~4 points more leniently"
+v10,results/server/v10/*,local_judge(opus) on server transcripts,ALL,49.2,7.53,8.0,4.0,6.33,5.67,17.66,"official 50.41"
+v11,results/server/v11/*,local_judge(opus) on server transcripts,ALL,66.77,12.3,10.0,7.33,11.0,10.0,16.14,"no official score yet; C03 main dx GHD instead of constitutional delay (dx 3)"
+v14,results/server/v14/*,local_judge(opus) on server transcripts,ALL,64.57,11.4,10.33,6.0,10.0,10.33,16.47,"38 turns; C01 main dx chronic insomnia (never asked medications)"
+v15,results/server/v15/*,local_judge(opus) on server transcripts,ALL,63.93,11.77,7.33,7.33,10.67,9.0,17.82,"37-38 turns, 8-9 calls; routine got zolpidem 5-6 tabs/day but main dx chronic insomnia; C03 familial short stature"
+v16,results/server/v16/* (6 runs),local_judge(opus) on server transcripts,ALL,68.72,12.67,11.67,6.67,10.83,9.67,17.21,"5/6 main dx correct (C01 1/2); 38-40 turns; 2/6 record answers cut at high effort, recovered at medium; official 66.80"
+v17,results/server/v17/*,local_judge(opus) on server transcripts,ALL,62.43,12.0,6.67,6.33,10.0,9.67,17.76,"record at medium: no cut-offs, 13-18 KRW; C01 insomnia, C03 GHD"
+v18,results/server/v18/*,local_judge(opus) on server transcripts,ALL,61.1,11.67,6.33,6.0,9.67,9.67,17.76,"separate high-effort diagnose call: same misses as v17; C01 never asked dose/duration/escalation, dependence left as r/o"
+v16,dist/submission.zip (tag v16 c18e44b),sample_validation,,66.80,9.76,15.00,7.28,10.00,6.89,17.87,"local Opus (6 other runs of the same cases) 68.72: info +2.9 and comm +2.8 more lenient, dx -3.3 (local C01 1/2 wrong dx)"
+v19,results/server/v19/* (3 runs),local_judge(opus) on server transcripts,ALL,73.63,14.07,13.67,7.67,11.67,10.0,16.58,"44 turns each, 7-8 exams; 3/3 main dx correct; C01 escalation found only at T26 after routine, withdrawal never asked; comm unchanged; official 63.48"
+v19,dist/submission.zip (tag v19 25013d2),sample_validation,,63.48,10.97,13.33,7.08,8.75,7.28,16.07,"vs v16 official: info +1.2, eff -1.8 (44 vs 38-40 turns), safety -1.25, dx -1.67; local Opus said +3.8 (73.63): ranking wrong again, judge eff slope too flat"
+v4,results/server/v4/* (3 runs),local_judge(nova-sol) on server transcripts,ALL,74.03,9.39,14.5,7.67,12.0,12.5,17.96,"competition sol, our rubric; official 62.18"
+v10,results/server/v10/* (3 runs),local_judge(nova-sol) on server transcripts,ALL,52.4,6.07,9.33,5.0,6.33,8.0,17.66,"competition sol, our rubric; official 50.41"
+v16,results/server/v16/* (6 runs),local_judge(nova-sol) on server transcripts,ALL,67.73,9.52,12.25,7.25,10.0,11.5,17.21,"competition sol, our rubric; official 66.80"
+v19,results/server/v19/* (3 runs),local_judge(nova-sol) on server transcripts,ALL,73.63,11.06,14.67,7.67,11.67,12.0,16.58,"competition sol, our rubric; official 63.48"
+v22,results/server/v22/* (3 runs),local_judge(opus) on server transcripts,ALL,72.77,13.57,14.33,7.33,12.33,11.0,14.23,"48 turns each, 25-32 KRW (v19 ~21); hypothesis lists and dialog closing ran with no JSON failures; 3/3 main dx"
+v38,dist/submission.zip (tag v38),sample_validation,,67.47,11.93,15.00,7.28,11.25,6.94,15.07,"46 turns, ~19 KRW; vs v16 official: info +2.17, safety +1.25, dx/tests/comm flat, eff -2.80. Opus fixed-checklist on our v38 server runs 74.8 (info +2.5, comm +2.4, eff +1.4 vs official)"
+v44,dist/submission.zip (tag v44),sample_validation,,71.29,12.24,15.00,7.44,12.50,6.72,17.39,"42 turns, ~23 KRW; best official so far (v38 67.47): info +0.31, safety +1.25, eff +2.32 at 42 vs 46 turns, comm flat again. Opus fixed-checklist estimate was 71.5"

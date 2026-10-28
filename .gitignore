@@ -1,0 +1,25 @@
+# secrets
+dev/.env
+# run outputs and build artifacts (recreated by dev/bench.py, dev/make_zip.py)
+results/
+dist/
+__pycache__/
+# large competition downloads (re-download from the dev guide)
+nova-guidelines-2026/
+nova-benchmarks-2026/
+resources/
+# local ledgers and render caches
+dev/data/usage/
+dev/data/guide_png/
+dev/data/guide_ocr.md
+# local Claude Code state
+.claude/
+.venv/
+# competition kit and licensed or derived material: kept local, never pushed
+agent/nova_sdk.py
+nova-starter/
+nova-devkit/
+nova-samples-2026/
+dev/data/
+CLAUDE.md
+docs/
