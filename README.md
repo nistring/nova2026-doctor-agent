@@ -4,7 +4,7 @@ Our entry for N.O.V.A. 2026 (분당서울대학교병원 의료인공지능센�
 in CPX style, performs physical exams, and submits an initial S/O/A/P record with one main diagnosis. v44 is our best
 officially validated version.
 
-Diagram of the agent structure: https://claude.ai/artifact/Nb7Bop1mCZHH47hvNY16on
+Diagram of the agent structure with an example encounter (one editable slide): https://claude.ai/artifact/S68fWuVTF2E1aUAtEDdDcF
 
 ## Score (official sample validation, 3 public cases)
 
